@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Resources;
 
 namespace MarathonInfoUpdater
 {
@@ -121,11 +122,7 @@ namespace MarathonInfoUpdater
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(this, "Runner Info Updater\r\n" +
-                                    "Version 2019.02.26\r\n" + 
-                                    "\u00A9 2019 Christopher Manuel\r\n\n" +
-                                    "This program is provided for as-is and without warranty or support.\r\n" +
-                                    "You may distribute this program any way you like.", "About Runner Info Updater", MessageBoxButtons.OK);
+            MessageBox.Show(this, Properties.Resources.CopywriteString, "About Runner Info Updater", MessageBoxButtons.OK);
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
